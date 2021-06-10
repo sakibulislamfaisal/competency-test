@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competence Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped" id="users">
+                <thead class="text-center">
+                  <tr class="text-center">
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center" width="140">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td>Faisal Rahman</td>
+                    <td>faisal@gmail.com</td>
+                    <td>01383833490</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-md btn-primary"
+                        data-toggle="modal"
+                        data-target="#modal-edit"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>Sakibul</td>
+                    <td>sakibul@gmail.com</td>
+                    <td>01383833440</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-md btn-primary"
+                        data-toggle="modal"
+                        data-target="#modal-edit"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>Sumon</td>
+                    <td>sumon@gmail.com</td>
+                    <td>01783833440</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-md btn-primary"
+                        data-toggle="modal"
+                        data-target="#modal-edit"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>Lutfor Rahman</td>
+                    <td>lutfor@gmail.com</td>
+                    <td>01683833440</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-md btn-primary"
+                        data-toggle="modal"
+                        data-target="#modal-edit"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal-edit">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form class="form-horizontal">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Name</label>
+                    <div class="col-md-12">
+                      <input name="name" id="name" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Email</label>
+                    <div class="col-md-12">
+                      <input name="email" id="email" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Phone</label>
+                    <div class="col-md-12">
+                      <input name="phone" id="phone" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="Submit" class="btn btn-primary text-light">
+                  Update
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
